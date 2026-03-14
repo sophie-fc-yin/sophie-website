@@ -21,9 +21,6 @@ export default function About() {
         <h2 className="text-xl font-semibold">Currently</h2>
         <div className="bg-black/5 border border-black/10 rounded-lg p-6 mt-4">
           <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-3">
-            <dt className="text-sm text-black/40">Location</dt>
-            <dd className="text-sm text-black/60">British Columbia, Canada</dd>
-
             <dt className="text-sm text-black/40">Focus</dt>
             <dd className="text-sm text-black/60">AI systems for the creator economy</dd>
 
