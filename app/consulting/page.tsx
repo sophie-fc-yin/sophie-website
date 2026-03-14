@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Consulting() {
   return (
-    <main style={{ background: '#0a0a0a', color: '#f0f0f0', minHeight: '100vh' }}>
+    <main>
       <div className="max-w-2xl mx-auto px-6 py-16">
 
         {/* 1. Opening */}
