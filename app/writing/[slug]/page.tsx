@@ -11,10 +11,11 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  const { slug } = await params;
   try {
-    const post = getPostBySlug(params.slug);
+    const post = getPostBySlug(slug);
     return {
       title: `${post.title} — Sophie Yin`,
       description: post.description,
@@ -24,10 +25,11 @@ export async function generateMetadata({
   }
 }
 
-export default function WritingPost({ params }: { params: { slug: string } }) {
+export default async function WritingPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   let post;
   try {
-    post = getPostBySlug(params.slug);
+    post = getPostBySlug(slug);
   } catch {
     notFound();
   }

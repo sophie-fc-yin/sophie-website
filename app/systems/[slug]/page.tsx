@@ -14,12 +14,13 @@ export function generateStaticParams() {
   return systems.map((s) => ({ slug: s.slug }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
-  const system = systems.find((s) => s.slug === params.slug);
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const system = systems.find((s) => s.slug === slug);
   if (!system) return {};
   return {
     title: `${system.name} — Sophie Yin`,
@@ -73,8 +74,9 @@ function DarkStatusBadge({ status }: { status: SystemStatus }) {
   );
 }
 
-export default function SystemDetail({ params }: { params: { slug: string } }) {
-  const system = systems.find((s) => s.slug === params.slug);
+export default async function SystemDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const system = systems.find((s) => s.slug === slug);
 
   if (!system) {
     notFound();
