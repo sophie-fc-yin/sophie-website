@@ -63,7 +63,7 @@ export default function ContactForm() {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm text-white/60 mb-1">
+        <label className="block text-sm text-black/50 mb-1">
           What would you like to automate or build?
         </label>
         <textarea
@@ -72,12 +72,12 @@ export default function ContactForm() {
           value={formData.what_to_automate}
           onChange={handleChange}
           disabled={isLoading}
-          className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
+          className="w-full bg-black/5 border border-black/10 rounded px-4 py-3 text-[#111] text-sm placeholder:text-black/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
         />
       </div>
 
       <div>
-        <label className="block text-sm text-white/60 mb-1">
+        <label className="block text-sm text-black/50 mb-1">
           What platform(s) are you on?
         </label>
         <input
@@ -87,12 +87,12 @@ export default function ContactForm() {
           onChange={handleChange}
           disabled={isLoading}
           placeholder="YouTube, Instagram, TikTok..."
-          className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
+          className="w-full bg-black/5 border border-black/10 rounded px-4 py-3 text-[#111] text-sm placeholder:text-black/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
         />
       </div>
 
       <div>
-        <label className="block text-sm text-white/60 mb-1">
+        <label className="block text-sm text-black/50 mb-1">
           Timeline — is this urgent or exploratory?
         </label>
         <input
@@ -102,12 +102,12 @@ export default function ContactForm() {
           onChange={handleChange}
           disabled={isLoading}
           placeholder="No rush, just exploring"
-          className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
+          className="w-full bg-black/5 border border-black/10 rounded px-4 py-3 text-[#111] text-sm placeholder:text-black/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
         />
       </div>
 
       <div>
-        <label className="block text-sm text-white/60 mb-1">
+        <label className="block text-sm text-black/50 mb-1">
           Your email
         </label>
         <input
@@ -117,7 +117,7 @@ export default function ContactForm() {
           onChange={handleChange}
           disabled={isLoading}
           placeholder="you@example.com"
-          className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
+          className="w-full bg-black/5 border border-black/10 rounded px-4 py-3 text-[#111] text-sm placeholder:text-black/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
         />
       </div>
 
