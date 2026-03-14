@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function Systems() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold">Systems</h1>
-      <p className="text-white/60 mt-4">
+      <h1 className="text-4xl font-bold text-[#111]">Systems</h1>
+      <p className="text-black/60 mt-4">
         Production AI infrastructure for the creator economy.
       </p>
 
@@ -21,8 +21,8 @@ export default function Systems() {
         ))}
       </div>
 
-      <div className="mt-16 bg-white/5 border border-white/10 p-6 rounded-lg">
-        <p className="text-sm text-white/50">
+      <div className="mt-16 bg-black/5 border border-black/10 p-6 rounded-lg">
+        <p className="text-sm text-black/50">
           These systems run on a split infrastructure — frontend and API routes on Vercel,
           background workers and data pipelines on DigitalOcean.
         </p>
