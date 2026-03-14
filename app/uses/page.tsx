@@ -46,7 +46,7 @@ export default function Uses() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
       <h1 className="text-4xl font-bold">Uses</h1>
-      <p className="text-white/60 mt-4">The actual tools and infrastructure I work with.</p>
+      <p className="text-black/60 mt-4">The actual tools and infrastructure I work with.</p>
 
       <div className="mt-12 space-y-12">
         {sections.map((section) => (
@@ -54,7 +54,7 @@ export default function Uses() {
             <h2 className="text-lg font-mono text-[#00d4aa]">{section.heading}</h2>
             <ul className="mt-3 space-y-1">
               {section.items.map((item) => (
-                <li key={item} className="text-sm text-white/70">
+                <li key={item} className="text-sm text-black/60">
                   {item}
                 </li>
               ))}

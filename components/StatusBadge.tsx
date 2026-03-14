@@ -25,8 +25,8 @@ export default function StatusBadge({ status }: StatusBadgeProps) {
 
   return (
     <span className="inline-flex items-center gap-1.5 text-xs">
-      <span className="bg-white/30 rounded-full w-2 h-2" />
-      <span className="text-white/40">Planned</span>
+      <span className="bg-black/30 rounded-full w-2 h-2" />
+      <span className="text-black/40">Planned</span>
     </span>
   );
 }

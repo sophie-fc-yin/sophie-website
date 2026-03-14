@@ -14,9 +14,9 @@ export default function SystemCard({ system }: SystemCardProps) {
   const doList = system.infrastructure.digitalocean.join(', ');
 
   return (
-    <div className="border border-white/10 p-6 rounded-lg hover:border-accent/30 transition-colors duration-200">
+    <div className="border border-black/10 p-6 rounded-lg hover:border-[#00d4aa]/40 transition-colors duration-200">
       <div>
-        <span className="font-mono text-lg font-semibold text-foreground">
+        <span className="font-mono text-lg font-semibold text-[#111]">
           {system.name}
         </span>
       </div>
@@ -26,7 +26,7 @@ export default function SystemCard({ system }: SystemCardProps) {
         <StatusBadge status={system.status} />
       </div>
 
-      <p className="text-sm text-white/60 mt-3">{system.oneLiner}</p>
+      <p className="text-sm text-black/60 mt-3">{system.oneLiner}</p>
 
       <div className="flex flex-wrap gap-1.5 mt-3">
         {system.capabilities.map((cap) => (
@@ -34,14 +34,14 @@ export default function SystemCard({ system }: SystemCardProps) {
         ))}
       </div>
 
-      <p className="text-xs text-white/30 mt-3">
+      <p className="text-xs text-black/30 mt-3">
         Vercel: {vercelList} · DO: {doList}
       </p>
 
       <div className="flex items-center justify-between mt-4">
         <Link
           href={`/systems/${system.slug}`}
-          className="text-sm text-accent hover:underline"
+          className="text-sm text-[#00d4aa] hover:underline"
         >
           View system →
         </Link>
@@ -50,7 +50,7 @@ export default function SystemCard({ system }: SystemCardProps) {
             href={system.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/40 hover:text-white/70 transition-colors"
+            className="text-black/40 hover:text-black/70 transition-colors"
           >
             <Github size={16} />
           </a>

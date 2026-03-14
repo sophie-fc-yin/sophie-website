@@ -34,20 +34,20 @@ export default function WritingPost({ params }: { params: { slug: string } }) {
 
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
-      <h1 className="text-3xl font-bold">{post.title}</h1>
-      <p className="text-sm text-white/40 mt-2">
+      <h1 className="text-3xl font-bold text-[#111]">{post.title}</h1>
+      <p className="text-sm text-black/40 mt-2">
         {new Date(post.date).toLocaleDateString('en-US', {
           year: 'numeric',
           month: 'long',
           day: 'numeric',
         })}
       </p>
-      <div className="prose prose-invert prose-lg mt-8 max-w-none prose-a:text-[#00d4aa] prose-headings:text-white">
+      <div className="prose prose-lg mt-8 max-w-none prose-a:text-[#00d4aa] prose-headings:text-[#111]">
         <MDXRemote source={post.content} />
       </div>
       <Link
         href="/writing"
-        className="text-sm text-white/40 hover:text-white/60 mt-12 inline-block"
+        className="text-sm text-black/40 hover:text-black/60 mt-12 inline-block"
       >
         ← Back to Writing
       </Link>

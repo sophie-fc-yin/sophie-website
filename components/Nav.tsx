@@ -7,7 +7,6 @@ import { useState } from 'react';
 const navLinks = [
   { label: 'Systems', href: '/systems' },
   { label: 'Consulting', href: '/consulting' },
-  { label: 'Writing', href: '/writing' },
   { label: 'About', href: '/about' },
 ];
 
@@ -16,11 +15,11 @@ export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-sm border-b border-white/10">
+    <nav className="sticky top-0 z-50 bg-[#fafafa]/90 backdrop-blur-sm border-b border-black/10">
       <div className="max-w-6xl mx-auto px-6">
         <div className="h-16 flex items-center justify-between">
           {/* Left: wordmark */}
-          <Link href="/" className="font-mono text-[#f0f0f0] hover:text-[#00d4aa] transition-colors">
+          <Link href="/" className="font-mono text-[#111] hover:text-[#00d4aa] transition-colors">
             Sophie
           </Link>
 
@@ -33,7 +32,7 @@ export default function Nav() {
                 className={`text-sm transition-colors ${
                   pathname === href
                     ? 'text-[#00d4aa]'
-                    : 'text-[#f0f0f0]/70 hover:text-[#f0f0f0]'
+                    : 'text-[#111]/70 hover:text-[#111]'
                 }`}
               >
                 {label}
@@ -47,16 +46,16 @@ export default function Nav() {
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-label="Toggle menu"
           >
-            <div className="h-[2px] w-6 bg-[#f0f0f0]" />
-            <div className="h-[2px] w-6 bg-[#f0f0f0]" />
-            <div className="h-[2px] w-6 bg-[#f0f0f0]" />
+            <div className="h-[2px] w-6 bg-[#111]" />
+            <div className="h-[2px] w-6 bg-[#111]" />
+            <div className="h-[2px] w-6 bg-[#111]" />
           </button>
         </div>
       </div>
 
       {/* Mobile dropdown */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#0a0a0a] border-b border-white/10">
+        <div className="md:hidden bg-[#fafafa] border-b border-black/10">
           <div className="max-w-6xl mx-auto px-6 flex flex-col">
             {navLinks.map(({ label, href }) => (
               <Link
@@ -66,7 +65,7 @@ export default function Nav() {
                 className={`py-3 text-sm transition-colors ${
                   pathname === href
                     ? 'text-[#00d4aa]'
-                    : 'text-[#f0f0f0]/70 hover:text-[#f0f0f0]'
+                    : 'text-[#111]/70 hover:text-[#111]'
                 }`}
               >
                 {label}
