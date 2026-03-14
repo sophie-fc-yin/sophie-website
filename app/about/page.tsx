@@ -28,7 +28,7 @@ export default function About() {
             <dd className="text-sm text-black/60">Production pipelines, audience intelligence tools, and agent systems</dd>
 
             <dt className="text-sm text-black/40">Stack</dt>
-            <dd className="text-sm text-black/60">Next.js, Supabase, OpenAI, Anthropic Claude, DigitalOcean, Vercel</dd>
+            <dd className="text-sm text-black/60">Python, TypeScript, SQL, Next.js, React, Tailwind CSS, PostgreSQL, pgvector, Redis, Supabase, Vercel, DigitalOcean, Docker, n8n, Celery, asyncio</dd>
           </dl>
         </div>
       </div>
