@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { systems } from '@/data/systems';
 import SystemCard from '@/components/SystemCard';
+import FadeIn from '@/components/FadeIn';
 
 export const metadata: Metadata = {
   title: 'Systems — Sophie Yin',
@@ -16,8 +17,10 @@ export default function Systems() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-        {systems.map((system) => (
-          <SystemCard key={system.slug} system={system} />
+        {systems.map((system, index) => (
+          <FadeIn key={system.slug} delay={index * 100}>
+            <SystemCard system={system} />
+          </FadeIn>
         ))}
       </div>
 
