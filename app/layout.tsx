@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sophie's Website",
-  description: "Personal website",
+  title: "Sophie Yin — AI Systems for Creators",
+  description:
+    "Designing intelligent systems that automate content workflows, analyze audience signals, and scale digital media operations.",
 };
 
 export default function RootLayout({
@@ -17,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#0a0a0a] text-[#f0f0f0] antialiased`}>
-        {children}
+        <Nav />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );
