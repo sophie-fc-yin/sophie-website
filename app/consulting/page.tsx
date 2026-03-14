@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata = {
   title: 'Consulting — Sophie Yin',
@@ -73,14 +74,8 @@ export default function Consulting() {
         <div className="mt-16">
           <p className="text-xl font-semibold">If any of this sounds familiar, let&apos;s talk.</p>
           <div className="mt-6">
-            <a
-              href="mailto:sophie@example.com"
-              className="inline-block border border-[#00d4aa] text-[#00d4aa] hover:bg-[#00d4aa]/10 px-6 py-3 rounded transition-colors text-sm"
-            >
-              sophie@example.com →
-            </a>
+            <ContactForm />
           </div>
-          <p className="mt-3 text-xs text-white/30">No forms, no 12-field intake process. Just an email.</p>
         </div>
 
       </div>
