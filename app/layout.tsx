@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#fafafa] text-[#111111] antialiased`}>
+      <body className={`${inter.className} bg-[#f9f9f7] text-[#1a1a1a] antialiased`}>
+        {/* Subtle top accent bar */}
+        <div className="h-[2px] w-full bg-[#00d4aa]" />
         <Nav />
         <main className="min-h-screen">{children}</main>
         <Footer />

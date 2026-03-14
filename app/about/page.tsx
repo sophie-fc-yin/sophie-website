@@ -26,14 +26,14 @@ const stackCategories = [
 export default function About() {
   return (
     <>
-      {/* Hero section — wide, impactful */}
-      <section className="border-b border-black/5">
+      {/* Hero section */}
+      <section className="border-b border-[#ebebeb]">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
-          <p className="text-sm font-mono text-[#00d4aa] tracking-wide uppercase">About</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-[#111] mt-4 leading-tight max-w-3xl">
+          <p className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">About</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-[#1a1a1a] mt-4 tracking-tight leading-[1.15] max-w-3xl">
             I build the infrastructure that turns raw data into systems that run without you.
           </h1>
-          <p className="text-lg md:text-xl text-black/50 mt-6 max-w-2xl leading-relaxed">
+          <p className="text-lg text-[#6b6b6b] mt-6 max-w-2xl leading-[1.75]">
             Data scientist turned systems engineer. I got into AI infrastructure because I kept
             seeing the same problem — creators and media businesses sitting on incredible data
             with no way to make it useful. So I started building it.
@@ -47,10 +47,9 @@ export default function About() {
 
           {/* Left: narrative */}
           <div>
-            <h2 className="text-sm font-mono text-[#00d4aa] tracking-wide uppercase">Background</h2>
-            <div className="mt-6 space-y-4 text-black/60 leading-relaxed">
+            <h2 className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Background</h2>
+            <div className="mt-6 space-y-4 text-[#6b6b6b] leading-[1.75]">
               <p>
-                {/* TODO: Replace with real background */}
                 Before building AI systems for creators, I spent [X] years working across data science,
                 data engineering, and machine learning engineering — building production pipelines,
                 training and deploying models, and designing the infrastructure that makes data
@@ -67,12 +66,12 @@ export default function About() {
 
           {/* Right: role cards */}
           <div>
-            <h2 className="text-sm font-mono text-[#00d4aa] tracking-wide uppercase">Roles</h2>
+            <h2 className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Roles</h2>
             <div className="mt-6 space-y-3">
               {roles.map((role) => (
-                <div key={role.title} className="border border-black/8 rounded-lg p-4 hover:border-[#00d4aa]/30 transition-colors">
-                  <p className="font-semibold text-[#111] text-sm">{role.title}</p>
-                  <p className="text-black/45 text-xs mt-1 leading-relaxed">{role.description}</p>
+                <div key={role.title} className="bg-white rounded-xl border border-[#e8e8e6] shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.02)] p-5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06),0_2px_4px_rgba(0,0,0,0.03)] hover:-translate-y-0.5 transition-all duration-300">
+                  <p className="font-semibold text-[#1a1a1a] text-sm">{role.title}</p>
+                  <p className="text-[#a0a0a0] text-xs mt-1 leading-relaxed">{role.description}</p>
                 </div>
               ))}
             </div>
@@ -82,17 +81,17 @@ export default function About() {
       </section>
 
       {/* Currently — accent bar */}
-      <section className="bg-black/[0.03]">
+      <section className="bg-[#f4f4f2]">
         <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
-          <h2 className="text-sm font-mono text-[#00d4aa] tracking-wide uppercase">Currently</h2>
+          <h2 className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Currently</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="border-l-2 border-[#00d4aa] pl-5">
-              <p className="text-xs text-black/35 uppercase tracking-wider">Focus</p>
-              <p className="text-[#111] mt-1">AI systems for the creator economy</p>
+              <p className="text-xs text-[#a0a0a0] uppercase tracking-[0.15em] font-medium">Focus</p>
+              <p className="text-[#1a1a1a] mt-1">AI systems for the creator economy</p>
             </div>
             <div className="border-l-2 border-[#00d4aa] pl-5">
-              <p className="text-xs text-black/35 uppercase tracking-wider">Building</p>
-              <p className="text-[#111] mt-1">Production pipelines, audience intelligence tools, and agent systems</p>
+              <p className="text-xs text-[#a0a0a0] uppercase tracking-[0.15em] font-medium">Building</p>
+              <p className="text-[#1a1a1a] mt-1">Production pipelines, audience intelligence tools, and agent systems</p>
             </div>
           </div>
         </div>
@@ -101,18 +100,18 @@ export default function About() {
       {/* Stack — grid layout */}
       <section className="max-w-5xl mx-auto px-6 py-16 md:py-20">
         <div className="flex items-end justify-between">
-          <h2 className="text-sm font-mono text-[#00d4aa] tracking-wide uppercase">Stack</h2>
-          <Link href="/uses" className="text-xs text-black/40 hover:text-[#00d4aa] transition-colors flex items-center gap-1">
+          <h2 className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Stack</h2>
+          <Link href="/uses" className="text-xs text-[#a0a0a0] hover:text-[#00d4aa] transition-colors flex items-center gap-1">
             Full details <ArrowRight size={12} />
           </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {stackCategories.map((cat) => (
             <div key={cat.name}>
-              <h3 className="text-xs font-semibold text-black/40 uppercase tracking-wider">{cat.name}</h3>
+              <h3 className="text-xs font-medium text-[#a0a0a0] uppercase tracking-[0.15em]">{cat.name}</h3>
               <div className="flex flex-wrap gap-1.5 mt-3">
                 {cat.items.map((item) => (
-                  <span key={item} className="bg-black/[0.04] border border-black/[0.06] text-black/60 text-xs px-2.5 py-1 rounded-md">
+                  <span key={item} className="bg-white border border-[#e8e8e6] text-[#6b6b6b] text-xs px-2.5 py-1 rounded-md shadow-sm">
                     {item}
                   </span>
                 ))}
@@ -123,13 +122,13 @@ export default function About() {
       </section>
 
       {/* Bottom section — who I work with + contact side by side */}
-      <section className="border-t border-black/5">
+      <section className="border-t border-[#ebebeb]">
         <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
           <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-12 md:gap-16">
 
             <div>
-              <h2 className="text-sm font-mono text-[#00d4aa] tracking-wide uppercase">Who I work with</h2>
-              <p className="text-black/60 mt-6 leading-relaxed">
+              <h2 className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Who I work with</h2>
+              <p className="text-[#6b6b6b] mt-6 leading-[1.75]">
                 Creators and media businesses who are serious about building systems — not just trying
                 tools. If you&apos;re looking for someone to set up ChatGPT, I&apos;m probably not the
                 right fit. If you want production infrastructure that runs while you sleep, let&apos;s
@@ -137,20 +136,20 @@ export default function About() {
               </p>
               <Link
                 href="/consulting"
-                className="inline-flex items-center gap-2 mt-6 text-sm text-[#00d4aa] hover:underline"
+                className="inline-flex items-center gap-2 mt-6 text-sm text-[#00d4aa] font-medium hover:opacity-80 transition-opacity"
               >
                 See how I work <ArrowRight size={14} />
               </Link>
             </div>
 
             <div>
-              <h2 className="text-sm font-mono text-[#00d4aa] tracking-wide uppercase">Get in touch</h2>
+              <h2 className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Get in touch</h2>
               <div className="mt-6 space-y-3">
                 <a
                   href="mailto:sophie@example.com"
-                  className="flex items-center gap-3 text-black/50 hover:text-[#111] transition-colors group"
+                  className="flex items-center gap-3 text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors group"
                 >
-                  <span className="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center group-hover:border-[#00d4aa]/40 transition-colors">
+                  <span className="w-10 h-10 rounded-full border border-[#e8e8e6] bg-white shadow-sm flex items-center justify-center group-hover:border-[#00d4aa]/40 transition-colors">
                     <Mail size={14} />
                   </span>
                   <span className="text-sm">sophie@example.com</span>
@@ -159,9 +158,9 @@ export default function About() {
                   href="https://github.com/sophiefcyin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-black/50 hover:text-[#111] transition-colors group"
+                  className="flex items-center gap-3 text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors group"
                 >
-                  <span className="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center group-hover:border-[#00d4aa]/40 transition-colors">
+                  <span className="w-10 h-10 rounded-full border border-[#e8e8e6] bg-white shadow-sm flex items-center justify-center group-hover:border-[#00d4aa]/40 transition-colors">
                     <Github size={14} />
                   </span>
                   <span className="text-sm">GitHub</span>
@@ -170,9 +169,9 @@ export default function About() {
                   href="https://linkedin.com/in/sophiefcyin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-black/50 hover:text-[#111] transition-colors group"
+                  className="flex items-center gap-3 text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors group"
                 >
-                  <span className="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center group-hover:border-[#00d4aa]/40 transition-colors">
+                  <span className="w-10 h-10 rounded-full border border-[#e8e8e6] bg-white shadow-sm flex items-center justify-center group-hover:border-[#00d4aa]/40 transition-colors">
                     <Linkedin size={14} />
                   </span>
                   <span className="text-sm">LinkedIn</span>

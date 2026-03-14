@@ -4,7 +4,7 @@ interface CapabilityTagProps {
 
 export default function CapabilityTag({ label }: CapabilityTagProps) {
   return (
-    <span className="bg-black/5 text-black/50 text-xs px-2 py-0.5 rounded">
+    <span className="bg-[#f0faf7] text-[#00d4aa] text-xs px-2.5 py-1 rounded-md font-medium">
       {label}
     </span>
   );

@@ -39,7 +39,7 @@ function DiagramForSlug({ slug }: { slug: string }) {
       return <CreatorOpsBotDiagram />;
     default:
       return (
-        <div className="bg-white/5 border border-white/10 rounded-lg p-6 mt-4 text-sm text-white/40">
+        <div className="bg-white/5 border border-white/10 rounded-xl p-6 mt-4 text-sm text-white/40">
           Architecture diagram coming soon.
         </div>
       );
@@ -49,7 +49,7 @@ function DiagramForSlug({ slug }: { slug: string }) {
 function DarkStatusBadge({ status }: { status: SystemStatus }) {
   if (status === 'Live') {
     return (
-      <span className="inline-flex items-center gap-1.5 text-xs">
+      <span className="inline-flex items-center gap-1.5 text-xs font-medium">
         <span className="animate-pulse bg-green-400 rounded-full w-2 h-2" />
         <span className="text-green-400">Live</span>
       </span>
@@ -58,7 +58,7 @@ function DarkStatusBadge({ status }: { status: SystemStatus }) {
 
   if (status === 'In Progress') {
     return (
-      <span className="inline-flex items-center gap-1.5 text-xs">
+      <span className="inline-flex items-center gap-1.5 text-xs font-medium">
         <span className="bg-yellow-400 rounded-full w-2 h-2" />
         <span className="text-yellow-400">In Progress</span>
       </span>
@@ -66,7 +66,7 @@ function DarkStatusBadge({ status }: { status: SystemStatus }) {
   }
 
   return (
-    <span className="inline-flex items-center gap-1.5 text-xs">
+    <span className="inline-flex items-center gap-1.5 text-xs font-medium">
       <span className="bg-white/30 rounded-full w-2 h-2" />
       <span className="text-white/40">Planned</span>
     </span>
@@ -88,40 +88,43 @@ export default function SystemDetail({ params }: { params: { slug: string } }) {
         {/* Back link */}
         <Link
           href="/systems"
-          className="text-sm text-black/40 hover:text-black/60 transition-colors"
+          className="text-sm text-[#a0a0a0] hover:text-[#00d4aa] transition-colors"
         >
           ← Back to Systems
         </Link>
 
         {/* Headline: cardHeadline as the emotional hook */}
-        <h1 className="text-3xl md:text-4xl font-bold text-[#111] mt-8 leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mt-8 tracking-tight leading-[1.15]">
           {system.cardHeadline}
         </h1>
 
         {/* The Problem */}
         <section className="mt-10">
-          <p className="text-lg text-black/70 leading-relaxed">
+          <p className="text-lg text-[#6b6b6b] leading-[1.75]">
             {system.problemStatement}
           </p>
         </section>
 
         {/* What You Get */}
         <section className="mt-10">
-          <h2 className="text-xl font-semibold text-[#111]">What you get</h2>
-          <p className="text-black/60 mt-4 leading-relaxed">
+          <h2 className="text-xl font-semibold text-[#1a1a1a]">What you get</h2>
+          <p className="text-[#6b6b6b] mt-4 leading-[1.75]">
             {system.whatItDoes}
           </p>
 
           {/* Demo output placeholder */}
-          <div className="mt-6 border-2 border-dashed border-black/10 rounded-lg p-8 text-center text-black/30">
+          <div className="mt-6 border-2 border-dashed border-[#e8e8e6] rounded-xl p-8 text-center text-[#a0a0a0]">
             Demo output coming soon — this system is currently {system.status}.
           </div>
         </section>
 
         {/* Soft CTA */}
-        <section className="mt-10 bg-black/5 border border-black/10 rounded-lg p-6">
-          <p className="font-semibold text-[#111]">Want something like this for your channel?</p>
-          <Link href="/consulting" className="inline-block mt-3 text-[#00d4aa] hover:underline text-sm">
+        <section className="mt-10 bg-white rounded-xl border border-[#e8e8e6] shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.02)] p-7">
+          <p className="font-semibold text-[#1a1a1a]">Want something like this for your channel?</p>
+          <Link
+            href="/consulting"
+            className="inline-block mt-4 bg-[#00d4aa] text-white px-7 py-3.5 rounded-lg font-medium text-sm hover:bg-[#00c49e] transition-all shadow-[0_1px_2px_rgba(0,212,170,0.3)] hover:shadow-[0_4px_12px_rgba(0,212,170,0.25)]"
+          >
             Let&apos;s talk →
           </Link>
         </section>

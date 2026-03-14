@@ -44,17 +44,17 @@ const sections = [
 
 export default function Uses() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold">Uses</h1>
-      <p className="text-black/60 mt-4">The actual tools and infrastructure I work with.</p>
+    <div className="max-w-2xl mx-auto px-6 py-20 md:py-28">
+      <h1 className="text-4xl font-bold tracking-tight text-[#1a1a1a]">Uses</h1>
+      <p className="text-[#6b6b6b] mt-4 leading-[1.75]">The actual tools and infrastructure I work with.</p>
 
       <div className="mt-12 space-y-12">
         {sections.map((section) => (
           <div key={section.heading}>
-            <h2 className="text-lg font-mono text-[#00d4aa]">{section.heading}</h2>
+            <h2 className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">{section.heading}</h2>
             <ul className="mt-3 space-y-1">
               {section.items.map((item) => (
-                <li key={item} className="text-sm text-black/60">
+                <li key={item} className="text-sm text-[#6b6b6b]">
                   {item}
                 </li>
               ))}

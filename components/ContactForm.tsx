@@ -54,7 +54,7 @@ export default function ContactForm() {
 
   if (status === 'success') {
     return (
-      <p className="text-[#00d4aa]">Message sent. I&apos;ll be in touch.</p>
+      <p className="text-[#00d4aa] font-medium">Message sent. I&apos;ll be in touch.</p>
     );
   }
 
@@ -63,7 +63,7 @@ export default function ContactForm() {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm text-black/50 mb-1">
+        <label className="block text-sm text-[#6b6b6b] font-medium mb-1.5">
           What would you like to automate or build?
         </label>
         <textarea
@@ -72,12 +72,12 @@ export default function ContactForm() {
           value={formData.what_to_automate}
           onChange={handleChange}
           disabled={isLoading}
-          className="w-full bg-black/5 border border-black/10 rounded px-4 py-3 text-[#111] text-sm placeholder:text-black/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
+          className="w-full bg-white border border-[#e8e8e6] rounded-lg px-4 py-3.5 text-[#1a1a1a] text-sm placeholder:text-[#a0a0a0] focus:border-[#00d4aa] focus:ring-1 focus:ring-[#00d4aa]/20 focus:outline-none transition-all"
         />
       </div>
 
       <div>
-        <label className="block text-sm text-black/50 mb-1">
+        <label className="block text-sm text-[#6b6b6b] font-medium mb-1.5">
           What platform(s) are you on?
         </label>
         <input
@@ -87,12 +87,12 @@ export default function ContactForm() {
           onChange={handleChange}
           disabled={isLoading}
           placeholder="YouTube, Instagram, TikTok..."
-          className="w-full bg-black/5 border border-black/10 rounded px-4 py-3 text-[#111] text-sm placeholder:text-black/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
+          className="w-full bg-white border border-[#e8e8e6] rounded-lg px-4 py-3.5 text-[#1a1a1a] text-sm placeholder:text-[#a0a0a0] focus:border-[#00d4aa] focus:ring-1 focus:ring-[#00d4aa]/20 focus:outline-none transition-all"
         />
       </div>
 
       <div>
-        <label className="block text-sm text-black/50 mb-1">
+        <label className="block text-sm text-[#6b6b6b] font-medium mb-1.5">
           Timeline — is this urgent or exploratory?
         </label>
         <input
@@ -102,12 +102,12 @@ export default function ContactForm() {
           onChange={handleChange}
           disabled={isLoading}
           placeholder="No rush, just exploring"
-          className="w-full bg-black/5 border border-black/10 rounded px-4 py-3 text-[#111] text-sm placeholder:text-black/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
+          className="w-full bg-white border border-[#e8e8e6] rounded-lg px-4 py-3.5 text-[#1a1a1a] text-sm placeholder:text-[#a0a0a0] focus:border-[#00d4aa] focus:ring-1 focus:ring-[#00d4aa]/20 focus:outline-none transition-all"
         />
       </div>
 
       <div>
-        <label className="block text-sm text-black/50 mb-1">
+        <label className="block text-sm text-[#6b6b6b] font-medium mb-1.5">
           Your email
         </label>
         <input
@@ -117,14 +117,14 @@ export default function ContactForm() {
           onChange={handleChange}
           disabled={isLoading}
           placeholder="you@example.com"
-          className="w-full bg-black/5 border border-black/10 rounded px-4 py-3 text-[#111] text-sm placeholder:text-black/30 focus:outline-none focus:border-[#00d4aa]/50 transition"
+          className="w-full bg-white border border-[#e8e8e6] rounded-lg px-4 py-3.5 text-[#1a1a1a] text-sm placeholder:text-[#a0a0a0] focus:border-[#00d4aa] focus:ring-1 focus:ring-[#00d4aa]/20 focus:outline-none transition-all"
         />
       </div>
 
       <button
         onClick={handleSubmit}
         disabled={isLoading}
-        className={`w-full border border-[#00d4aa] text-[#00d4aa] hover:bg-[#00d4aa]/10 px-6 py-3 rounded transition-colors text-sm mt-6${isLoading ? ' opacity-50 cursor-not-allowed' : ''}`}
+        className={`w-full bg-[#00d4aa] text-white px-7 py-3.5 rounded-lg font-medium text-sm hover:bg-[#00c49e] transition-all shadow-[0_1px_2px_rgba(0,212,170,0.3)] hover:shadow-[0_4px_12px_rgba(0,212,170,0.25)] mt-6${isLoading ? ' opacity-50 cursor-not-allowed' : ''}`}
       >
         {isLoading ? 'Sending...' : "Let's talk"}
       </button>

@@ -15,11 +15,11 @@ export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#fafafa]/90 backdrop-blur-sm border-b border-black/10">
+    <nav className="sticky top-0 z-50 bg-[#f9f9f7]/80 backdrop-blur-sm border-b border-[#ebebeb]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="h-16 flex items-center justify-between">
+        <div className="h-[72px] flex items-center justify-between">
           {/* Left: wordmark */}
-          <Link href="/" className="font-mono text-[#111] hover:text-[#00d4aa] transition-colors">
+          <Link href="/" className="font-semibold tracking-tight text-[#1a1a1a] hover:text-[#00d4aa] transition-colors">
             Sophie
           </Link>
 
@@ -32,7 +32,7 @@ export default function Nav() {
                 className={`text-sm transition-colors ${
                   pathname === href
                     ? 'text-[#00d4aa]'
-                    : 'text-[#111]/70 hover:text-[#111]'
+                    : 'text-[#6b6b6b] hover:text-[#1a1a1a]'
                 }`}
               >
                 {label}
@@ -46,16 +46,16 @@ export default function Nav() {
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-label="Toggle menu"
           >
-            <div className="h-[2px] w-6 bg-[#111]" />
-            <div className="h-[2px] w-6 bg-[#111]" />
-            <div className="h-[2px] w-6 bg-[#111]" />
+            <div className="h-[2px] w-6 bg-[#1a1a1a]" />
+            <div className="h-[2px] w-6 bg-[#1a1a1a]" />
+            <div className="h-[2px] w-6 bg-[#1a1a1a]" />
           </button>
         </div>
       </div>
 
       {/* Mobile dropdown */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#fafafa] border-b border-black/10">
+        <div className="md:hidden bg-[#f9f9f7] border-b border-[#ebebeb]">
           <div className="max-w-6xl mx-auto px-6 flex flex-col">
             {navLinks.map(({ label, href }) => (
               <Link
@@ -65,7 +65,7 @@ export default function Nav() {
                 className={`py-3 text-sm transition-colors ${
                   pathname === href
                     ? 'text-[#00d4aa]'
-                    : 'text-[#111]/70 hover:text-[#111]'
+                    : 'text-[#6b6b6b] hover:text-[#1a1a1a]'
                 }`}
               >
                 {label}
