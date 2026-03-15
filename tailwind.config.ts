@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        satoshi: ['Satoshi', 'system-ui', 'sans-serif'],
+      },
       colors: {
         background: '#f9f9f7',
         foreground: '#1a1a1a',
