@@ -25,7 +25,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-grid">
         <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#1a1a1a] leading-[1.1]">
+          <h1 className="font-satoshi text-4xl md:text-6xl font-bold tracking-tight text-[#1a1a1a] leading-[1.1]">
             AI Systems for Creators and Digital Media
           </h1>
           <p className="text-lg md:text-xl text-[#6b6b6b] mt-8 max-w-2xl leading-[1.75]">
@@ -40,17 +40,17 @@ export default function Home() {
           </Link>
           <div className="flex gap-8 mt-12 pt-8 border-t border-[#ebebeb]">
             <div>
-              <span className="font-mono text-3xl font-bold text-[#1a1a1a]">4</span>
+              <span className="font-satoshi text-3xl font-bold text-[#1a1a1a]">4</span>
               <br/>
               <span className="text-[#a0a0a0] text-xs uppercase tracking-[0.15em]">AI systems</span>
             </div>
             <div>
-              <span className="font-mono text-3xl font-bold text-[#1a1a1a]">3</span>
+              <span className="font-satoshi text-3xl font-bold text-[#1a1a1a]">3</span>
               <br/>
               <span className="text-[#a0a0a0] text-xs uppercase tracking-[0.15em]">client tiers</span>
             </div>
             <div>
-              <span className="font-mono text-3xl font-bold text-[#1a1a1a]">E2E</span>
+              <span className="font-satoshi text-3xl font-bold text-[#1a1a1a]">E2E</span>
               <br/>
               <span className="text-[#a0a0a0] text-xs uppercase tracking-[0.15em]">production-grade</span>
             </div>
@@ -63,7 +63,7 @@ export default function Home() {
         <section className="py-14 md:py-20 bg-[#f4f4f2]">
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Featured Projects</p>
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-[#1a1a1a] mt-2">Production AI Infrastructure</h2>
+            <h2 className="font-satoshi text-2xl md:text-3xl font-bold tracking-tight text-[#1a1a1a] mt-2">Production AI Infrastructure</h2>
             <p className="text-[#6b6b6b] mt-2 leading-[1.75]">
               From simple automation to full pipeline orchestration.
             </p>
@@ -81,7 +81,7 @@ export default function Home() {
         <section className="py-12 md:py-16">
           <div className="max-w-6xl mx-auto px-6">
             <div className="bg-white rounded-xl border border-[#e8e8e6] shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.02)] p-10 md:p-14">
-              <p className="text-xl md:text-2xl font-semibold text-[#1a1a1a]">
+              <p className="font-satoshi text-xl md:text-2xl font-semibold text-[#1a1a1a]">
                 Most creator operations are built on manual effort that doesn&apos;t
                 scale.
               </p>

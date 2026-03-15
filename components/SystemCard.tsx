@@ -16,7 +16,7 @@ export default function SystemCard({ system }: SystemCardProps) {
   return (
     <div className="bg-white rounded-xl border border-[#e8e8e6] p-7 shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.06),0_2px_4px_rgba(0,0,0,0.03)] hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
       <div>
-        <span className="text-lg font-semibold text-[#1a1a1a]">
+        <span className="font-satoshi text-lg font-semibold text-[#1a1a1a]">
           {system.name}
         </span>
       </div>

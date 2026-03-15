@@ -45,7 +45,7 @@ const sections = [
 export default function Uses() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-20 md:py-28">
-      <h1 className="text-4xl font-bold tracking-tight text-[#1a1a1a]">Uses</h1>
+      <h1 className="font-satoshi text-4xl font-bold tracking-tight text-[#1a1a1a]">Uses</h1>
       <p className="text-[#6b6b6b] mt-4 leading-[1.75]">The actual tools and infrastructure I work with.</p>
 
       <div className="mt-12 space-y-12">

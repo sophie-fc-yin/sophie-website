@@ -30,7 +30,7 @@ export default function About() {
       <section className="border-b border-[#ebebeb]">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <p className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">About</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-[#1a1a1a] mt-4 tracking-tight leading-[1.15] max-w-3xl">
+          <h1 className="font-satoshi text-3xl md:text-5xl font-bold text-[#1a1a1a] mt-4 tracking-tight leading-[1.15] max-w-3xl">
             I build the infrastructure that turns raw data into systems that run without you.
           </h1>
           <p className="text-lg text-[#6b6b6b] mt-6 max-w-2xl leading-[1.75]">
@@ -70,7 +70,7 @@ export default function About() {
             <div className="mt-6 space-y-3">
               {roles.map((role) => (
                 <div key={role.title} className="bg-white rounded-xl border border-[#e8e8e6] shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.02)] p-5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06),0_2px_4px_rgba(0,0,0,0.03)] hover:-translate-y-0.5 transition-all duration-300">
-                  <p className="font-semibold text-[#1a1a1a] text-sm">{role.title}</p>
+                  <p className="font-satoshi font-semibold text-[#1a1a1a] text-sm">{role.title}</p>
                   <p className="text-[#a0a0a0] text-xs mt-1 leading-relaxed">{role.description}</p>
                 </div>
               ))}

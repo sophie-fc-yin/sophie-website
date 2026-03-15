@@ -19,7 +19,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="h-[72px] flex items-center justify-between">
           {/* Left: wordmark */}
-          <Link href="/" className="font-semibold tracking-tight text-[#1a1a1a] hover:text-[#00d4aa] transition-colors">
+          <Link href="/" className="font-satoshi font-semibold tracking-tight text-[#1a1a1a] hover:text-[#00d4aa] transition-colors">
             Sophie
           </Link>
 

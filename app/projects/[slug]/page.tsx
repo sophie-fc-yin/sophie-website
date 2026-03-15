@@ -96,7 +96,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
         </Link>
 
         {/* Headline: cardHeadline as the emotional hook */}
-        <h1 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mt-8 tracking-tight leading-[1.15]">
+        <h1 className="font-satoshi text-3xl md:text-4xl font-bold text-[#1a1a1a] mt-8 tracking-tight leading-[1.15]">
           {project.cardHeadline}
         </h1>
 
@@ -109,7 +109,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
 
         {/* What You Get */}
         <section className="mt-10">
-          <h2 className="text-xl font-semibold text-[#1a1a1a]">What you get</h2>
+          <h2 className="font-satoshi text-xl font-semibold text-[#1a1a1a]">What you get</h2>
           <p className="text-[#6b6b6b] mt-4 leading-[1.75]">
             {project.whatItDoes}
           </p>
@@ -166,14 +166,14 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
 
           {/* Architecture */}
           <section className="mt-12">
-            <h3 className="text-lg font-semibold text-white/90">Architecture</h3>
+            <h3 className="font-satoshi text-lg font-semibold text-white/90">Architecture</h3>
             <DiagramForSlug slug={project.slug} />
           </section>
 
           {/* Tech Stack table */}
           {project.techStack.length > 0 && (
             <section className="mt-12">
-              <h3 className="text-lg font-semibold text-white/90">Tech Stack</h3>
+              <h3 className="font-satoshi text-lg font-semibold text-white/90">Tech Stack</h3>
               <table className="w-full mt-4">
                 <thead>
                   <tr>
@@ -196,7 +196,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
           {/* Pipeline steps */}
           {project.pipeline.length > 0 && (
             <section className="mt-12">
-              <h3 className="text-lg font-semibold text-white/90">Pipeline</h3>
+              <h3 className="font-satoshi text-lg font-semibold text-white/90">Pipeline</h3>
               <div className="mt-4 space-y-2">
                 {project.pipeline.map((step, i) => (
                   <div key={i} className="flex items-center gap-3 text-sm">
