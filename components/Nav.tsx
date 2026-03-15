@@ -1,8 +1,9 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import { useState } from 'react';
+import Logo from '@/components/Logo';
 
 const navLinks = [
   { label: 'Projects', href: '/projects' },
@@ -18,10 +19,8 @@ export default function Nav() {
     <nav className="sticky top-0 z-50 bg-[#f9f9f7]/80 backdrop-blur-sm border-b border-[#ebebeb]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="h-[72px] flex items-center justify-between">
-          {/* Left: wordmark */}
-          <Link href="/" className="font-satoshi font-semibold tracking-tight text-[#1a1a1a] hover:text-[#00d4aa] transition-colors">
-            Sophie
-          </Link>
+          {/* Left: logo */}
+          <Logo />
 
           {/* Right: desktop links */}
           <div className="hidden md:flex items-center gap-8">
