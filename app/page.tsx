@@ -33,10 +33,10 @@ export default function Home() {
             analyze audience signals, and scale digital media operations.
           </p>
           <Link
-            href="/systems"
+            href="/projects"
             className="inline-block mt-8 bg-[#00d4aa] text-white px-7 py-3.5 rounded-lg font-medium text-sm hover:bg-[#00c49e] transition-all shadow-[0_1px_2px_rgba(0,212,170,0.3)] hover:shadow-[0_4px_12px_rgba(0,212,170,0.25)]"
           >
-            See the systems →
+            See the projects →
           </Link>
           <div className="flex gap-8 mt-12 pt-8 border-t border-[#ebebeb]">
             <div>
@@ -62,7 +62,7 @@ export default function Home() {
       <FadeIn>
         <section className="py-14 md:py-20 bg-[#f4f4f2]">
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Featured Systems</p>
+            <p className="text-xs uppercase tracking-[0.15em] text-[#a0a0a0] font-medium">Featured Projects</p>
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-[#1a1a1a] mt-2">Production AI Infrastructure</h2>
             <p className="text-[#6b6b6b] mt-2 leading-[1.75]">
               From simple automation to full pipeline orchestration.

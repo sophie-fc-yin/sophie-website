@@ -6,11 +6,12 @@ export interface TechStackEntry {
   technology: string;
 }
 
-export interface System {
+export interface Project {
   name: string;
   slug: string;
   tier: Tier;
   status: SystemStatus;
+  category: 'AI Systems' | 'Machine Learning' | 'Infrastructure';
   cardHeadline: string;
   oneLiner: string;
   problemStatement: string;
@@ -26,3 +27,6 @@ export interface System {
     digitalocean: string[];
   };
 }
+
+// Alias for backward compatibility
+export type System = Project;

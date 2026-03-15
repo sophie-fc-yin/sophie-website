@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { systems } from '@/data/systems';
+import { projects } from '@/data/systems';
 import { getAllSlugs } from '@/lib/writing';
 
 const BASE_URL = 'https://sophieyin.com';
@@ -9,9 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: `${BASE_URL}/`, lastModified: new Date() },
-    { url: `${BASE_URL}/systems`, lastModified: new Date() },
-    ...systems.map((system) => ({
-      url: `${BASE_URL}/systems/${system.slug}`,
+    { url: `${BASE_URL}/projects`, lastModified: new Date() },
+    ...projects.map((project) => ({
+      url: `${BASE_URL}/projects/${project.slug}`,
       lastModified: new Date(),
     })),
     { url: `${BASE_URL}/consulting`, lastModified: new Date() },

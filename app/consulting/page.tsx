@@ -30,7 +30,7 @@ export default function Consulting() {
             <p className="text-lg text-[#6b6b6b] leading-[1.75]">
               Most channels are sitting on a goldmine of audience intelligence buried in their comments, watch data, and community signals. Very few are actually using it.
             </p>
-            <Link href="/systems" className="mt-4 inline-block text-[#00d4aa] font-medium text-sm hover:opacity-80 transition-opacity">
+            <Link href="/projects" className="mt-4 inline-block text-[#00d4aa] font-medium text-sm hover:opacity-80 transition-opacity">
               See what that looks like in practice →
             </Link>
             <div className="mt-8 flex items-center gap-3">

@@ -40,7 +40,7 @@ export default function SystemCard({ system }: SystemCardProps) {
 
       <div className="flex items-center justify-between mt-4 pt-4 border-t border-[#e8e8e6]">
         <Link
-          href={`/systems/${system.slug}`}
+          href={`/projects/${system.slug}`}
           className="text-sm text-[#00d4aa] font-medium hover:opacity-80 transition-opacity"
         >
           View system →
